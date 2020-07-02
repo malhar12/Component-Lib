@@ -1,0 +1,17 @@
+<ng-container>
+  <form #autoInputForm="ngForm" [formGroup]="form">
+    <mat-form-field class="form-field">    
+      <input type="text"
+        [placeholder]="placeholder"
+        aria-label="Text"
+        matInput
+        formControlName="myAutoControl"
+        [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selectedOption($event)">
+        <mat-option *ngFor="let option of filteredList" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>  
+</ng-container>

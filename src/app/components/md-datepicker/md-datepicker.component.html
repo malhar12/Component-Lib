@@ -1,0 +1,10 @@
+<ng-container>
+  <form #autoInputForm="ngForm" [formGroup]="form">
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>{{placeholder}}</mat-label>
+      <input matInput [matDatepicker]="picker" [disabled]="disable" formControlName="myDateControl" (dateChange)="dateChange($event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+</ng-container>

@@ -1,0 +1,21 @@
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-container .demo-form{
+    width: 400px;
+}
+
+.form-container .results-container{
+    border: 5px solid red;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.form-container .results-container h3{
+    color: #1867be;
+}
